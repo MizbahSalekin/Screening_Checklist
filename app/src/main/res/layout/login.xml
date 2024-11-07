@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F3F3F3">
+    <LinearLayout android:paddingTop="100sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:gravity="center">
+        <ImageView android:src="@drawable/logo_icddrb_blue" android:layout_gravity="center_horizontal"
+            android:layout_width="150sp"
+            android:layout_height="90sp"
+            android:gravity="center"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:text="@string/app_name"
+            android:textColor="#FF0000"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+    <LinearLayout android:layout_marginBottom="10sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:layout_gravity="center">
+        <TextView
+            android:id="@+id/AppName"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:text="Test_HSPSD"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+    <View android:layout_height="1dip" android:visibility="gone" android:layout_width="match_parent" android:background="#CCCCCC" android:layout_marginTop="0sp"/>
+
+    <LinearLayout android:layout_marginTop="30sp" android:layout_marginBottom="5sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content" android:gravity="left"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="ব্যবহারকারীর নাম" android:textSize="25sp"/>
+    </LinearLayout>
+    <!-- পরিবার কল্যাণ সহকারী নাম-->
+    <LinearLayout android:layout_marginTop="0sp"  android:layout_marginBottom="10sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center">
+
+        <!--        <Spinner
+                    android:id="@+id/userId"
+                    style="@style/icddrb_edittext_oval"
+                    android:layout_width="350sp"
+                    android:layout_height="45sp"
+                    android:drawSelectorOnTop="true"
+                    android:enabled="true"
+                    android:padding="8dp"
+                    android:textSize="16sp" />-->
+        <EditText
+            android:id="@+id/userId"
+            style="@style/icddrb_edittext"
+            android:layout_width="300sp"
+            android:layout_height="45sp"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:inputType="text"
+            android:padding="8dp" android:focusable="false"
+            android:singleLine="true"
+            android:hint=""
+            android:text=""
+            android:textSize="20sp" android:drawableRight="@drawable/ic_action_person"/>
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="10sp" android:layout_marginBottom="10sp" android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center">
+        <TextView
+            android:layout_width="250sp" android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="পাসওয়ার্ড" android:textSize="25sp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="10sp" android:orientation="vertical" android:layout_marginBottom="10sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:gravity="center">
+
+        <EditText
+            android:id="@+id/pass"
+            style="@style/icddrb_edittext"
+            android:layout_width="300sp"
+            android:layout_height="45sp"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:hint="পাসওয়ার্ড"
+            android:inputType="numberPassword"
+            android:padding="8dp"
+            android:password="true"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="25sp" android:drawableRight="@drawable/ic_action_secure"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout11" android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:gravity="center"
+        android:padding="5dip" android:orientation="vertical" >
+        <Button android:id="@+id/btnLogin"  android:background="@drawable/icddrb_button_style_green_oval"
+            android:layout_width="350sp" android:textAllCaps="false" android:textSize="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10sp"
+            android:text="লগইন" android:textColor="#FFFFFF"/>
+
+        <Button android:visibility="gone"
+            android:id="@+id/btnClose"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/icddrb_button_style_green_oval_line"
+            android:text="Close"
+            android:textAllCaps="false"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_marginTop="0sp" android:layout_marginBottom="10sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:orientation="vertical" android:layout_gravity="center">
+        <TextView
+            android:id="@+id/lblSystemDate" android:layout_width="match_parent" android:layout_height="35sp"
+            android:gravity="center" android:textSize="18dp"
+            android:text="System_Date" android:textColor="#006699"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center|bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblSystemDate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20sp"
+            android:text="User Name"
+            android:textColor="#006699"
+            android:textSize="20sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#F3F3F3">
+        <LinearLayout android:paddingTop="100sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:gravity="center">
+            <ImageView android:src="@drawable/logo_of_icddrb" android:layout_gravity="center_horizontal"
+                android:layout_width="150sp"
+                android:layout_height="90sp"
+                android:gravity="center"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:text="@string/app_name"
+                android:textColor="#FF0000"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+        <LinearLayout android:layout_marginBottom="10sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center">
+            <TextView
+                android:id="@+id/AppName"
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:text="sdfsdf"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+
+        <View android:layout_height="1dip" android:visibility="gone" android:layout_width="match_parent" android:background="#CCCCCC" android:layout_marginTop="0sp"/>
+
+        <LinearLayout android:layout_marginTop="30sp" android:layout_marginBottom="5sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:gravity="center">
+            <TextView
+                android:layout_width="350sp" android:gravity="left"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="ব্যবহারকারীর নাম" android:textSize="25sp"/>
+        </LinearLayout>
+       &lt;!&ndash; পরিবার কল্যাণ সহকারী নাম&ndash;&gt;
+        <LinearLayout android:layout_marginTop="0sp" android:layout_marginBottom="10sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:gravity="center">
+
+    &lt;!&ndash;        <Spinner
+                android:id="@+id/userId"
+                style="@style/icddrb_edittext_oval"
+                android:layout_width="350sp"
+                android:layout_height="45sp"
+                android:drawSelectorOnTop="true"
+                android:enabled="true"
+                android:padding="8dp"
+                android:textSize="16sp" />&ndash;&gt;
+            <EditText
+                android:id="@+id/userId"
+                style="@style/icddrb_edittext"
+                android:layout_width="350sp"
+                android:layout_height="45sp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:inputType="text"
+                android:padding="8dp" android:focusable="false"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="20sp" android:drawableRight="@drawable/ic_action_person"/>
+        </LinearLayout>
+        <LinearLayout android:layout_marginTop="10sp" android:layout_marginBottom="10sp" android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:gravity="center">
+            <TextView
+                android:layout_width="350sp" android:gravity="left"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="পাসওয়ার্ড" android:textSize="25sp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_marginTop="10sp" android:layout_marginBottom="10sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:gravity="center">
+
+            <EditText
+                android:id="@+id/pass"
+                style="@style/icddrb_edittext"
+                android:layout_width="350sp"
+                android:layout_height="45sp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:hint="পাসওয়ার্ড"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:password="true"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="25sp" android:drawableRight="@drawable/ic_action_secure"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout11" android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:gravity="center"
+            android:padding="5dip" android:orientation="vertical" >
+            <Button android:id="@+id/btnLogin"  android:background="@drawable/icddrb_button_style_green_oval"
+                android:layout_width="350sp" android:textAllCaps="false" android:textSize="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10sp"
+                android:text="লগইন" android:textColor="#FFFFFF"/>
+
+            <Button android:visibility="gone"
+                android:id="@+id/btnClose"
+                android:layout_width="350sp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/icddrb_button_style_green_oval_line"
+                android:text="Close"
+                android:textAllCaps="false"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_marginTop="0sp" android:layout_marginBottom="10sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center">
+            <TextView
+                android:id="@+id/lblSystemDate" android:layout_width="match_parent" android:layout_height="35sp"
+                android:gravity="center" android:textSize="18dp"
+                android:text="09 Jul 2014" android:textColor="#006699"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblSystemDate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20sp"
+                android:text="User Name"
+                android:textColor="#006699"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    -->

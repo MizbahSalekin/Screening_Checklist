@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridVillage"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" android:background="@drawable/icddrb_village_button_green_line">
+
+    <TextView android:id="@+id/lblVillageName" android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" android:clickable="false" android:textSize="20dp" android:textColor="#ffffff"/>
+    <TextView android:id="@+id/lblMouzaName" android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left" android:clickable="false" android:textSize="14dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal" android:paddingBottom="5dp">
+        <TextView android:id="@+id/lblTotalHHlabel" android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="মোট দম্পতি: "
+            android:gravity="left" android:clickable="false" android:textSize="14dp" />
+
+        <TextView android:id="@+id/lblTotalHH" android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left" android:clickable="false" android:textSize="12dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pressed_color">#4d90fe</color>
+    <color name="default_color">#ffffff</color>
+    <color name="theme_color">#FFC4005F</color>
+
+
+    <color name="navigationBar">@color/theme_color</color>
+
+
+    <!-- Custom color icddr,b -->
+    <color name="icddrb_theme_color">#0091EA</color>
+    <color name="icddrb_window_background">#D7D7D7</color>
+    <color name="icddrb_window_background_light">#F3F3F3</color>
+    <color name="icddrb_heading_color_background">#FFFFFF</color>
+    <color name="icddrb_heading_color_background_light">#81D4FA</color>
+    <color name="icddrb_heading_color_font">#000000</color>
+
+    <color name="icddrb_toolbar_color_background">@color/icddrb_theme_color</color>
+    <color name="icddrb_toolbar_color_font">#ffffff</color>
+
+    <!--Button Color-->
+    <color name="icddrb_village_color_background">#81C784</color>
+    <color name="icddrb_village_color_background_pressed">#4CAF50</color>
+    <color name="icddrb_village_color_stroke">#388E3C</color>
+
+    <color name="icddrb_register_color_background">#80CBC4</color>
+    <color name="icddrb_register_color_background_pressed">#00ACC1</color>
+    <color name="icddrb_register_color_stroke">#00ACC1</color>
+
+    <!-- Color -->
+    <color name="icddrb_color_teal">#81C784</color>
+    <color name="icddrb_color_teal_light">#4CAF50</color>
+    <color name="icddrb_color_teal_dark">#4DB6AC</color>
+    <color name="icddrb_color_teal_stroke">#388E3C</color>
+
+
+
+</resources>
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <color name="colorPrimary">#3F51B5</color>
+        <color name="colorPrimaryDark">#303F9F</color>
+        <color name="colorAccent">#FF4081</color>
+    </resources>
+    -->

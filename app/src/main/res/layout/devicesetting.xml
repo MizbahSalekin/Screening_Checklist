@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"        android:layout_width="fill_parent"         android:layout_height="fill_parent"         android:overScrollMode="always"         android:isScrollContainer="true"         android:scrollbarAlwaysDrawVerticalTrack="true"         android:scrollbarStyle="outsideInset"         android:scrollbars="vertical"><LinearLayout android:orientation="vertical" android:layout_width="fill_parent"    android:layout_marginLeft="10sp" android:layout_marginRight="10sp"    android:layout_height="wrap_content" android:scrollbars="vertical">
+    <LinearLayout android:paddingTop="30sp"
+        android:layout_width="fill_parent" android:background="#FFFFFF"
+        android:layout_height="wrap_content" android:gravity="center">
+        <ImageView android:src="@drawable/logo_icddrb_blue" android:layout_gravity="center_horizontal"
+            android:layout_width="150sp"
+            android:layout_height="90sp"
+            android:gravity="center"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:text="@string/app_name"
+            android:textColor="#FF0000"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="0sp" android:layout_marginBottom="10sp"
+        android:layout_width="fill_parent" android:background="#FFFFFF"
+        android:layout_height="wrap_content" android:layout_gravity="center">
+        <TextView
+            android:id="@+id/AppName"
+            android:layout_width="fill_parent" android:text="ডিভাইস সেটিং"
+            android:layout_height="45sp"
+            android:gravity="center"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+        <!--Red Color code FF0000-->
+    </LinearLayout>
+    <View android:layout_height="2dip" android:layout_width="fill_parent" android:background="#006699" />
+
+    <LinearLayout android:id="@+id/secFac_level" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0">
+        <TextView android:id="@+id/VlblFac_level" android:text="সেবা প্রদানের স্থান" android:layout_width="200sp" android:layout_height="wrap_content" android:textSize="20sp" />
+        <Spinner android:id="@+id/spnFac_level" android:drawSelectorOnTop="true" android:layout_width="300sp" android:layout_height="wrap_content" android:layout_weight="0" android:prompt="@string/planet_prompt" android:textSize="20sp" />
+    </LinearLayout>
+    <View android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+
+    <LinearLayout android:id="@+id/secDist" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0">
+        <TextView android:id="@+id/VlblDist" android:text="জেলা" android:layout_width="200sp" android:layout_height="wrap_content" android:textSize="20sp" />
+        <Spinner android:id="@+id/spnDist" android:drawSelectorOnTop="true" android:layout_width="300sp" android:layout_height="wrap_content" android:layout_weight="0" android:prompt="@string/planet_prompt" android:textSize="20sp" />
+    </LinearLayout>
+    <View android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+    <LinearLayout android:id="@+id/secUpz" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0">
+        <TextView android:id="@+id/VlblUpz" android:text="উপজেলা/সিটি কর্পোরেশন এলাকার" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20sp" />
+        <Spinner android:id="@+id/spnUpz" android:drawSelectorOnTop="true" android:layout_width="300sp" android:layout_height="wrap_content" android:layout_weight="0" android:prompt="@string/planet_prompt" android:textSize="20sp" />
+    </LinearLayout>
+    <View android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+    <LinearLayout android:id="@+id/secUN" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0">
+        <TextView android:id="@+id/VlblUN" android:text="ইউনিয়ন/পৌরসভা /জোন" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20sp" />
+        <Spinner android:id="@+id/spnUN" android:drawSelectorOnTop="true" android:layout_width="300sp" android:layout_height="wrap_content" android:layout_weight="0" android:prompt="@string/planet_prompt" android:textSize="20sp" />
+    </LinearLayout>
+    <View android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secWard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0">
+        <TextView android:id="@+id/VlblWard" android:text="ওয়ার্ড" android:layout_width="200sp" android:layout_height="wrap_content" android:textSize="20sp" />
+        <Spinner android:id="@+id/spnWard" android:drawSelectorOnTop="true" android:layout_width="300sp" android:layout_height="wrap_content" android:layout_weight="0" android:prompt="@string/planet_prompt" android:textSize="20sp" />
+    </LinearLayout>
+    <View android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+  <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0">
+        <TextView android:text="ব্যবহারকারীর ধরন" android:layout_width="200sp" android:layout_height="wrap_content" android:textSize="20sp" />
+        <Spinner android:id="@+id/spnProvider" android:drawSelectorOnTop="true" android:layout_width="300sp" android:layout_height="wrap_content" android:layout_weight="0" android:prompt="@string/planet_prompt" android:textSize="20sp" />
+    </LinearLayout>
+    <View android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0">
+        <TextView  android:text="ব্যবহারকারী আইডি" android:layout_width="200sp" android:layout_height="wrap_content" android:textSize="20sp" />
+        <Spinner android:id="@+id/spnProviderCode" android:drawSelectorOnTop="true" android:layout_width="300sp" android:layout_height="wrap_content" android:layout_weight="0" android:prompt="@string/planet_prompt" android:textSize="20sp" />
+    </LinearLayout>
+    <View android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+    <LinearLayout android:layout_width="fill_parent" android:paddingTop="60sp" android:layout_height="wrap_content" android:orientation="vertical">
+        <Button android:id="@+id/cmdSave" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="#FFFFFF"
+            android:textSize="20sp" android:text="সেটআপ সম্পূর্ণ করুন"  android:layout_marginBottom="10sp" android:background="@drawable/button_style_green"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

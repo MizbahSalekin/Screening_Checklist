@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="0sp"
+    android:layout_marginRight="0sp"
+    android:orientation="vertical"
+    android:scrollbars="vertical" android:background="@color/icddrb_window_background">
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@color/icddrb_theme_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/cmdBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="12dp" android:background="@color/icddrb_theme_color"
+            android:src="@drawable/ic_action_back" />
+
+        <LinearLayout
+            android:id="@+id/topLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/cmdBack"
+            android:background="@color/icddrb_theme_color"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:text="স্ক্রীনিং চেকলিস্ট আপডেট তালিকা"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+
+        </LinearLayout>
+       <!-- <TextView
+            android:id="@+id/VlblSNo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="মোট :" android:layout_gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:textSize="20sp" android:gravity="left|center_vertical"
+            android:visibility="visible" android:layout_toLeftOf="@+id/lblTCount"/>
+
+        <TextView
+            android:id="@+id/lblTCount"
+            android:layout_width="wrap_content" android:layout_gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff" android:layout_toLeftOf="@+id/cmdClose"
+            android:textSize="20sp" android:layout_marginRight="10dp" android:gravity="left|center_vertical"/>
+-->
+        <ImageButton android:id="@+id/cmdClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/close" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout android:paddingLeft="20sp" android:paddingRight="20sp"
+        android:id="@+id/secRegTypet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:visibility="gone" style="@style/rowStyle0">
+
+        <TextView
+            android:id="@+id/VlblRegType"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text=" সেবা প্রদানের স্থান"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spnRegType"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/planet_prompt"
+            android:textSize="20sp" />
+
+
+
+
+    </LinearLayout>
+
+
+    <View android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+    <LinearLayout android:paddingLeft="20sp" android:paddingRight="20sp"
+        android:id="@+id/secupazilaid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:visibility="gone" style="@style/rowStyle0">
+
+        <TextView
+            android:id="@+id/Vlblupazilaid"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="উপজেলার নাম"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spnupazilaid"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/planet_prompt"
+            android:textSize="20sp" />
+
+
+
+
+    </LinearLayout>
+
+    <View android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+    <LinearLayout android:paddingLeft="20sp" android:paddingRight="20sp"
+        android:id="@+id/secunionidid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:visibility="visible" style="@style/rowStyle0">
+
+        <TextView
+            android:id="@+id/Vlblunionidid"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="ইউনিয়ন নাম"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spnunionidid"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/planet_prompt"
+            android:textSize="20sp" />
+
+
+
+
+    </LinearLayout>
+
+    <View android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+
+    <LinearLayout android:paddingLeft="20sp" android:paddingRight="20sp"
+        android:id="@+id/secVisitStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:visibility="visible" style="@style/rowStyle0">
+
+        <TextView
+            android:id="@+id/VlblVisitStatus"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="ওয়ার্ড নম্বর"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spnEPIWord"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/planet_prompt"
+            android:textSize="20sp" />
+
+
+
+
+    </LinearLayout>
+
+    <View android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:paddingLeft="20sp" android:paddingRight="20sp"
+        android:id="@+id/secEDDColorCoding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:visibility="visible">
+
+        <TextView
+            android:id="@+id/VlblSpdeg"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="ইপিআই কেন্দ্রের নাম/ব্লক"
+            android:textSize="20sp" />
+        spnEPICluster
+
+        <Spinner
+            android:id="@+id/spnEPICluster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/planet_prompt"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+
+
+    <View android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+
+    <LinearLayout android:paddingLeft="20sp" android:paddingRight="20sp"
+        android:id="@+id/secNameSearchtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" style="@style/rowStyle1">
+
+        <EditText
+            android:id="@+id/txtNameSearch"
+            style="@style/icddrb_search_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textCapCharacters"
+            android:maxLength="100"
+            android:textSize="19sp" android:padding="5dp" android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+        <View android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+    <LinearLayout android:paddingLeft="20sp" android:paddingRight="20sp"
+        android:id="@+id/secEDDColorCoding1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:visibility="visible"  android:background="@color/icddrb_theme_color">
+
+        <TextView
+            android:id="@+id/VlblSNo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="মোট :" android:layout_gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:textSize="20sp" android:gravity="left|center_vertical"
+            android:visibility="visible" android:layout_toLeftOf="@+id/lblTCount"/>
+
+        <TextView
+            android:id="@+id/lblTCount"
+            android:layout_width="wrap_content" android:layout_gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff" android:layout_toLeftOf="@+id/cmdClose"
+            android:textSize="20sp" android:layout_marginRight="10dp" android:gravity="left|center_vertical"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <View android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+
+
+    <LinearLayout
+        android:id="@+id/seclblH"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="0sp"
+        android:paddingRight="0sp" android:background="#D7D7D7">
+
+        <ListView
+            android:id="@+id/lstData"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:background="#D7D7D7"
+            android:clickable="true"
+            android:divider="@color/icddrb_heading_color_background_light"
+            android:dividerHeight="0px" />
+    </LinearLayout>
+    </LinearLayout>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:title=" টুলস"
+        android:icon="@drawable/iconsmenu"
+        app:showAsAction="always|withText"
+        android:gravity="left">
+
+        <menu>
+            <item
+
+                android:icon="@drawable/ic_menu_cart"
+                android:id="@+id/notification"
+                android:title="নোটিফিকেশন (Notifications)"
+                />
+            <item
+                android:icon="@drawable/jobaid"
+                android:id="@+id/jobadd"
+                android:title="কর্ম সহায়ক টু্‌লস (Job aid tools)"/>
+
+
+            <item
+                android:icon="@drawable/report"
+                android:id="@+id/report"
+                android:title="রিপোর্ট (Reports)"
+                />
+
+
+        </menu>
+    </item>
+
+   <!-- android:icon="@drawable/notificationicon"-->
+
+    <item android:id="@+id/menuSearch" android:icon="@drawable/search" android:title="search" app:showAsAction="ifRoom|withText" android:textSize="5sp"/>
+    <item android:id="@+id/menuSync"   android:title="sync"  android:icon="@drawable/refresh" app:showAsAction="ifRoom|withText"  android:textSize="5sp"/>
+    <item android:id="@+id/menuExit" android:title="Exit" android:icon="@drawable/exit1" app:showAsAction="always"  android:textSize="5sp"/>
+
+
+</menu>

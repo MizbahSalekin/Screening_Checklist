@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" android:background="#D7D7D7">
+    <RelativeLayout android:id="@+id/topLayout"
+        android:layout_width="fill_parent" android:background="@color/icddrb_theme_color"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView android:id="@+id/emisLogo" android:visibility="gone"
+            android:layout_width="50dp"
+            android:layout_height="50dp" android:src="@drawable/emislogo" android:paddingTop="5dp"/>
+        <LinearLayout android:id="@+id/topLayout3" android:layout_toRightOf="@+id/emisLogo"
+            android:layout_width="fill_parent" android:background="@color/icddrb_theme_color"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/lblAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:text="User Type"
+                android:textColor="#ffffff"
+                android:textSize="25sp" android:paddingTop="5dp" />
+            <LinearLayout android:id="@+id/topLayout1"
+                android:layout_width="fill_parent" android:background="@color/icddrb_theme_color"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:paddingLeft="10px">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="জেলা "
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtZila"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/topLayout2"
+                android:layout_width="fill_parent" android:background="@color/icddrb_theme_color"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:paddingLeft="10px">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="উপজেলা "
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtUpazila"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <ImageButton android:id="@+id/cmdExit"
+            android:layout_width="30dp" android:layout_alignParentRight="true"
+            android:layout_height="30dp" android:src="@drawable/ic_action_remove_white"
+            android:layout_marginTop="5dp" android:background="@color/icddrb_theme_color"
+            android:layout_marginRight="10dp" />
+
+    </RelativeLayout>
+    <!--    <RelativeLayout
+            android:layout_width="fill_parent" android:background="@color/icddrb_theme_color"
+            android:layout_height="wrap_content" android:padding="5dp"
+            android:orientation="horizontal">
+
+        </RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="fill_parent" android:background="@color/icddrb_theme_color"
+        android:layout_height="wrap_content" android:padding="5dp"
+
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/cmdSearch"
+            android:layout_width="120dp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="5sp" android:layout_alignParentLeft="true" android:gravity="left|center_vertical" android:paddingLeft="5dp" android:paddingRight="10dp"
+            android:background="@drawable/icddrb_button_white_oval"
+            android:text="ডাটা সার্চ" android:drawableLeft="@drawable/ic_action_search_black"
+            android:textSize="18sp" android:visibility="gone"/>
+        <Button
+            android:id="@+id/cmdSync" android:layout_toRightOf="@id/cmdSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"  android:paddingRight="10dp"
+            android:layout_marginLeft="5sp" android:gravity="left|center_vertical" android:paddingLeft="5dp"
+            android:background="@drawable/icddrb_button_white_oval"
+            android:text="ডাটা সিঙ্ক" android:drawableLeft="@drawable/ic_action_refresh"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ssUn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="5dp"
+        android:orientation="horizontal" style="@style/icddrb_section_style" android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_marginLeft="20sp"
+            android:gravity="left"
+            android:text="ইউনিয়ন : "
+            android:textColor="#000000"
+            android:textSize="20sp" />
+      <!--  ইউনিয়ন-->
+
+        <TextView
+            android:id="@+id/txtUnion"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:textSize="20sp" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ssWard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="5dp"
+        android:orientation="horizontal" style="@style/icddrb_section_style" android:visibility="visible">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_marginLeft="20sp"
+            android:gravity="left"
+            android:text="ওয়ার্ড : "
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <!--  ইউনিয়ন-->
+
+        <TextView
+            android:id="@+id/txtWard"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+        android:id="@+id/secipcsup_home"  android:layout_marginBottom="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:visibility="gone" style="@style/icddrb_section_style">>
+        <include
+            layout="@layout/ipcsup_home_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

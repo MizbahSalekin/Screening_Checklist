@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:installLocation="internalOnly"
+    android:versionCode="1"
+    android:versionName="1.10">
+
+    <!--
+        <uses-sdk
+            android:minSdkVersion="16"
+            android:targetSdkVersion="17" />
+    -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"  android:maxSdkVersion="32"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" /> <!-- <uses-permission android:name="android.permission.WRITE_SETTINGS" /> -->
+    <!-- <uses-permission android:name="android.permission.RECORD_AUDIO" /> -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+  <!--  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_icddrb_blue"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="false"
+        android:theme="@style/CustomTheme"
+        tools:ignore="UnusedAttribute">
+
+        <activity
+            android:name="com.example.sclreg.scl_view_list"
+            android:label=""
+            android:theme="@style/icdrb_CustomTheme" />
+        <activity
+            android:name="com.example.sclreg.iron_gps"
+            android:label=""
+            android:theme="@style/icdrb_CustomTheme" />
+
+        <activity
+            android:name="com.example.sclreg.Section_1_Screening_Checklist_Idf"
+            android:label=""
+            android:theme="@style/icdrb_CustomTheme" />
+
+        <activity
+            android:name="com.example.sclreg.Section_2_Vaccinations_Info"
+            android:label=""
+            android:theme="@style/icdrb_CustomTheme" />
+
+        <activity
+            android:name="com.example.sclreg.SettingForm"
+            android:label="Setting" />
+        <!--
+ <application android:screenOrientation="portrait" android:allowBackup="true" android:icon="@drawable/govtlogo3" android:clearTaskOnLaunch="true" android:label="@string/app_name" android:largeHeap="true"
+             android:theme="@style/CustomTheme"
+             android:name="apps_font.CustomFontApp" android:supportsRtl="true">
+        -->
+        <!--
+  <application  android:allowBackup="true" android:icon="@drawable/govtlogo3" android:clearTaskOnLaunch="true" android:label="@string/app_name" android:largeHeap="true"
+              android:theme="@style/CustomTheme"
+              android:name="apps_font.CustomFontApp" android:supportsRtl="true">
+        -->
+        <activity
+            android:name="com.example.sclreg.LoginActivity"
+            android:exported="true"
+            android:label="@string/app_name_all"
+            android:screenOrientation="portrait"
+            android:theme="@style/icdrb_CustomTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.sclreg.schecklist_home"
+            android:theme="@style/icdrb_CustomTheme" />
+    </application>
+
+</manifest>

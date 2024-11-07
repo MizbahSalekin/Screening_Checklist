@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rowlay" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="#D7D7D7">
+
+    <LinearLayout
+        android:id="@+id/memtab"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        style="@style/icddrb_section_style_household">
+
+        <LinearLayout android:id="@+id/memtab1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+           <!-- android:background="#006699"-->
+            <TextView android:id="@+id/lblLastDur" android:text="  "
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" android:textSize="18sp"
+                android:layout_gravity="left" />
+            <TextView
+                android:id="@+id/lblIdno"
+                android:text="IDNO       : "
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="2sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/Idno"
+                android:text="IDNO "
+                android:textSize="18sp"
+                android:layout_width="400sp"
+                android:layout_gravity="left"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout android:id="@+id/memtab2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:visibility="gone">
+            <TextView
+                android:id="@+id/lblvillname"
+                android:text="ইউনিয়ন নাম    : "
+                android:textSize="18sp"
+                android:layout_marginLeft="11sp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="left"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/villname"
+                android:text="ইউনিয়ন নাম "
+                android:textSize="18sp"
+                android:layout_width="400sp"
+                android:gravity="left"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/slno"
+                android:text="ক্রমিক নং"
+                android:textSize="18sp"
+                android:paddingTop="4sp"
+                android:paddingBottom="4sp"
+                android:layout_width="250sp"
+                android:layout_marginLeft="5sp"
+                android:gravity="left" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout android:id="@+id/memtab10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView  android:id="@+id/lblChName"
+                android:text="শিশুটি নাম : "
+                android:textSize="18sp"
+                android:layout_marginLeft="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/ChName"
+                android:text="শিশুটি নাম : " android:textSize="18sp"
+                android:layout_width="500sp"
+                android:gravity="left"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/memtab12"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView  android:id="@+id/lblChMName"
+                android:text="মায়ের নাম : "
+                android:textSize="18sp"
+                android:layout_marginLeft="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/ChMName"
+                android:text="মায়ের নাম : " android:textSize="18sp"
+                android:layout_width="500sp"
+                android:gravity="left"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/memtab13"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView  android:id="@+id/lblChFName"
+                android:text="বাবার নাম  : "
+                android:textSize="18sp"
+                android:layout_marginLeft="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/ChFName"
+                android:text="বাবার নাম  : " android:textSize="18sp"
+                android:layout_width="500sp"
+                android:gravity="left"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/memtab17"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView  android:id="@+id/lblBName"
+                android:text="বাড়ির নাম  : "
+                android:textSize="18sp"
+                android:layout_marginLeft="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/BName"
+                android:text="বাড়ির নাম  : " android:textSize="18sp"
+                android:layout_width="500sp"
+                android:gravity="left"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:id="@+id/memtab14"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView  android:id="@+id/lblPhno"
+                android:text="মোবাইল নম্বর: "
+                android:textSize="18sp"
+                android:layout_marginLeft="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/PnNo"
+                android:text="মোবাইল নম্বর: " android:textSize="18sp"
+                android:layout_width="500sp"
+                android:gravity="left"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/memtab11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:visibility="gone">
+
+            <TextView  android:id="@+id/lblChAddress"
+                android:text="শিশুটি ঠিকানা  : "
+                android:textSize="18sp"
+                android:layout_marginLeft="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/ChAddress"
+                android:text="শিশুটি ঠিকানা  : " android:textSize="18sp"
+                android:layout_width="500sp"
+                android:gravity="left"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/memtab3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:visibility="gone">
+
+            <TextView  android:id="@+id/lblregtype"
+                android:text=" সেবা কেন্দ্রের নাম: "
+                android:textSize="18sp"
+                android:layout_marginLeft="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/regtype"
+                android:text=" সেবা কেন্দ্রের নাম: " android:textSize="18sp"
+                android:layout_width="500sp"
+                android:gravity="left"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/memtab9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView  android:id="@+id/lblNoVac"
+                android:text="শিশুটি সবগুলো টিকা নিয়েছে: "
+                android:textSize="18sp"
+                android:layout_marginLeft="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/NoVac"
+                android:text="শিশুটি সবগুলো টিকা নিয়েছে: " android:textSize="18sp"
+                android:layout_width="500sp"
+                android:gravity="left"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/memtab6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView  android:id="@+id/lblVisitdate"
+                android:text="সাক্ষাৎকার গ্রহণের তারিখ: "
+                android:textSize="18sp"
+                android:layout_marginLeft="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/VDate"
+                android:text="তারিখ" android:textSize="18sp"
+                android:layout_width="500sp"
+                android:gravity="left"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/memtab16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:visibility="visible">
+
+            <TextView  android:id="@+id/lblUpz"
+                android:text="উপজেলার নাম: "
+                android:textSize="18sp"
+                android:layout_marginLeft="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/UpzName"
+                android:text="উপজেলার নাম:" android:textSize="18sp"
+                android:layout_width="500sp"
+                android:gravity="left"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/memtab15"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:visibility="visible">
+
+            <TextView  android:id="@+id/lblUn"
+                android:text="ইউনিয়ন: "
+                android:textSize="18sp"
+                android:layout_marginLeft="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/UnName"
+                android:text="ইউনিয়ন" android:textSize="18sp"
+                android:layout_width="500sp"
+                android:gravity="left"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/memtab4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:visibility="visible">
+
+            <TextView  android:id="@+id/lblName"
+                android:text="ওয়ার্ড নম্বর: "
+                android:textSize="18sp"
+                android:layout_marginLeft="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/ward"
+                android:text="ওয়ার্ড নম্বর" android:textSize="18sp"
+                android:layout_width="500sp"
+                android:gravity="left"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/memtab5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:visibility="visible">
+
+            <TextView  android:id="@+id/lblEPICluster"
+                android:text="ইপিআই কেন্দ্রের নাম/ব্লক: "
+                android:textSize="18sp"
+                android:layout_marginLeft="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/epicluster_Name"
+                android:text="ইপিআই কেন্দ্রের নাম/ব্লক" android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:gravity="left"
+                android:layout_marginLeft="10sp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:id="@+id/memtab7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:visibility="gone">
+
+            <TextView  android:id="@+id/lblgps"
+                android:text="জিপিএস: "
+                android:textSize="18sp"
+                android:layout_marginLeft="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/gps"
+                android:text="জিপিএস: " android:textSize="18sp"
+                android:layout_width="500sp"
+                android:gravity="left"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/memtab8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView  android:id="@+id/lblUpload"
+                android:text="Data Upload: "
+                android:textSize="18sp"
+                android:layout_marginLeft="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/Upload"
+                android:text="Upload: " android:textSize="18sp"
+                android:layout_width="500sp"
+                android:gravity="left"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+

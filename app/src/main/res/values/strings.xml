@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ই-স্ক্রীনিং চেকলিস্ট</string>
+    <string name="app_name_all">ই-স্ক্রীনিং চেকলিস্ট</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="planet_prompt">লিস্ট থেকে সিলেক্ট করুণ</string>
+    <string name="str_cnt_mnu_edit">Edit</string>
+    <string name="str_cnt_mnu_delete">Delete</string>
+    <string name="local_service_started">Service Started . . .</string>
+</resources>

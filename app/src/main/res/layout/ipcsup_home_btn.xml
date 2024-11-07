@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/seclblH2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/VlblRegisterFWA"
+            style="@style/icddrb_heading_without_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="" />
+
+    </LinearLayout>
+
+    <View android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="0sp"
+        android:background="#D7D7D7" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <!--<LinearLayout
+               android:id="@+id/linearLayout1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="5sp"
+               android:gravity="center"
+               android:visibility="visible" android:weightSum="1" android:numColumns="1">
+
+                  <Button
+                       android:id="@+id/cmdNewReg"
+                       android:layout_width="670sp"
+                       android:layout_height="70sp"
+                       android:layout_marginLeft="0sp"
+                       android:layout_marginRight="5sp"
+                       android:background="@drawable/icddrb_button_register_roundcorner"
+                       android:text="নবজাতক ও মায়ের রেজিস্ট্রেশন "
+                       android:textSize="18sp"  android:layout_weight="1"></Button>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/linearLayout2"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="5sp"
+                   android:gravity="center"
+                   android:visibility="visible" android:weightSum="1" android:numColumns="1">
+
+                   <Button
+                       android:id="@+id/cmdUpdateReg"
+                       android:layout_width="670sp"
+                       android:layout_height="70sp"
+                       android:layout_marginLeft="0sp"
+                       android:layout_marginRight="5sp"
+                       android:background="@drawable/icddrb_button_register_roundcorner"
+                       android:text="নবজাতক ও মায়ের রেজি: আপডেট তালিকা"
+                       android:textSize="18sp"  android:layout_weight="1"></Button>
+
+
+
+
+               </LinearLayout>-->
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:gravity="center"
+                android:visibility="visible" android:weightSum="1" android:numColumns="1" >
+
+                <Button
+                    android:id="@+id/cmdNewsSChecklist"
+                    android:layout_width="670sp"
+                    android:layout_height="70sp"
+                    android:layout_marginLeft="0sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/icddrb_button_register_roundcorner"
+                    android:text="স্ক্রীনিং চেকলিস্ট ফর্ম \n(শুধুমাত্র দুই বছরের কম বয়সী শিশুদের জন্য প্রযোজ্য)"
+                    android:textSize="18sp"  android:layout_weight="1"></Button>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:gravity="center"
+                android:visibility="visible" android:weightSum="1" android:numColumns="1">
+
+                <Button
+                    android:id="@+id/cmdUpdateSChecklist"
+                    android:layout_width="670sp"
+                    android:layout_height="70sp"
+                    android:layout_marginLeft="0sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/icddrb_button_register_roundcorner"
+                    android:text="স্ক্রীনিং চেকলিস্ট আপডেট তালিকা"
+                    android:textSize="18sp"  android:layout_weight="1">
+
+                </Button>
+
+
+
+
+            </LinearLayout>
+
+     <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:gravity="center"
+                android:visibility="gone" android:weightSum="1" android:numColumns="1">
+
+                <Button
+                    android:id="@+id/cmdIPCChecklist"
+                    android:layout_width="670sp"
+                    android:layout_height="70sp"
+                    android:layout_marginLeft="0sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/icddrb_button_register_roundcorner"
+                    android:text="আইপিসি চেকলিস্ট "
+                    android:textSize="18sp"  android:layout_weight="1"></Button>
+
+
+            </LinearLayout>
+        <LinearLayout
+               android:id="@+id/linearLayout6"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="5sp"
+               android:gravity="center"
+               android:visibility="gone" android:weightSum="1" android:numColumns="1">
+
+               <Button
+                   android:id="@+id/cmdUpdateIPC"
+                   android:layout_width="670sp"
+                   android:layout_height="70sp"
+                   android:layout_marginLeft="0sp"
+                   android:layout_marginRight="5sp"
+                   android:background="@drawable/icddrb_button_register_roundcorner"
+                   android:text="আইপিসি চেকলিস্ট আপডেট তালিকা"
+                   android:textSize="18sp"  android:layout_weight="1"></Button>
+
+
+
+
+           </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="0sp"
+        android:background="#D7D7D7" />
+
+
+</LinearLayout>

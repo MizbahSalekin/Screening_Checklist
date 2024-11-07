@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/notificationicon"
+        android:gravity="center" />
+
+    <!--<item
+        android:drawable="@drawable/jobaid"
+        android:gravity="center" />
+
+     &lt;!&ndash;set a place holder Drawable so android:drawable isn't null&ndash;&gt;
+    <item
+        android:id="@+id/ic_badge"
+        android:drawable="@drawable/report" />-->
+
+
+    <!--<RelativeLayout
+        android:id="@+id/badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/badge_layout">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/myButton1"
+                android:layout_width="65dip"
+                android:layout_height="65dip"
+                android:background="@drawable/email_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/badge_notification_sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/relative_layout1"
+            android:background="@drawable/badge_circle"
+            android:text="21"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>-->
+</layer-list>

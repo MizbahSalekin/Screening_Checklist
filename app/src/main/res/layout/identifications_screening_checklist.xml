@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="0sp"
+    android:layout_marginRight="0sp"
+    android:orientation="vertical"
+    android:scrollbars="vertical" android:background="@color/icddrb_window_background">
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@color/icddrb_theme_color"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/cmdBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="12dp" android:background="@color/icddrb_theme_color"
+            android:src="@drawable/ic_action_back" />
+
+        <LinearLayout
+            android:id="@+id/topLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/cmdBack"
+            android:background="@color/icddrb_theme_color"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:text="সেকশন 1: \nসেবা গ্রহণকারীর পরিচিতি"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+
+        </LinearLayout>
+        <!--
+                <TextView
+                    android:id="@+id/lblTCount"
+                    android:layout_width="80sp" android:layout_gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:textColor="#ffffff" android:layout_toLeftOf="@+id/cmdClose"
+                    android:textSize="20sp" android:layout_marginRight="10dp" android:gravity="left|center_vertical"/>-->
+
+
+        <ImageButton android:id="@+id/cmdClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/close" />
+
+    </RelativeLayout>
+<!--<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0sp"
+    android:layout_marginRight="0sp"
+    android:orientation="vertical"
+    android:scrollbars="vertical" android:background="@color/icddrb_window_background">
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@color/icddrb_theme_color"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/cmdBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="12dp" android:background="@color/icddrb_theme_color"
+            android:src="@drawable/ic_action_back" />
+
+        <LinearLayout
+            android:id="@+id/topLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/cmdBack"
+            android:background="@color/icddrb_theme_color"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:text="Section 1: \nব্যবহারকারী পরিচিতি"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+
+        </LinearLayout>
+
+
+        <ImageButton android:id="@+id/cmdClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/close" />
+
+    </RelativeLayout>-->
+
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="always" android:isScrollContainer="true" android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="outsideInset" android:scrollbars="vertical">
+    <LinearLayout android:layout_marginLeft="10sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <LinearLayout android:id="@+id/secidno" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0">
+            <TextView android:id="@+id/txtslno" android:visibility="gone"  android:layout_width="40sp" android:layout_height="wrap_content" android:textSize="20sp" />
+            <TextView android:id="@+id/Vlblidno" android:text="Idno." android:layout_width="300sp" android:layout_height="wrap_content" android:textSize="20sp" />
+            <TextView android:id="@+id/txtidno" android:enabled="false" android:maxLength="20" android:layout_width="300sp" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:textSize="20sp" />
+        </LinearLayout>
+        <View android:id="@+id/lineidno" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+       <!-- <LinearLayout android:id="@+id/secq1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0" android:visibility="gone">
+         <TextView android:id="@+id/Vlblq1" android:text="101. সেবা প্রদানের স্থান " android:layout_width="300sp" android:layout_height="wrap_content" android:textSize="20sp" />
+        <RadioGroup android:id="@+id/rdogrpq1" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20sp">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:textSize="20sp" android:id="@+id/rdoq11" android:text="উপজেলা" android:gravity="top|bottom" />
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:textSize="20sp" android:id="@+id/rdoq12" android:text="ইউনিয়ন" android:gravity="top|bottom" />
+            <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:textSize="20sp" android:id="@+id/rdoq13" android:text="ওয়ার্ড" android:gravity="top|bottom" />
+            </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineq1" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+-->
+   <LinearLayout android:id="@+id/seczillaid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0">
+     <TextView android:id="@+id/Vlblzillaid" android:text="101. জেলার নাম:/ সিটি কর্পোরেশনের:" android:layout_width="300sp" android:layout_height="wrap_content" android:textSize="20sp" />
+        <Spinner android:id="@+id/spnzillaid" android:drawSelectorOnTop="true" android:layout_width="300sp" android:layout_height="wrap_content" android:layout_weight="0" android:prompt="@string/planet_prompt" android:textSize="20sp" />
+    </LinearLayout>
+    <View android:id="@+id/linezillaid" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+  <LinearLayout android:id="@+id/secupazilaid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0">
+       <TextView android:id="@+id/Vlblupazilaid" android:text="102. উপজেলার নাম:/ সিটি কর্পোরেশন এলাকার:" android:layout_width="300sp" android:layout_height="wrap_content" android:textSize="20sp" />
+        <Spinner android:id="@+id/spnupazilaid" android:drawSelectorOnTop="true" android:layout_width="300sp" android:layout_height="wrap_content" android:layout_weight="0" android:prompt="@string/planet_prompt" android:textSize="20sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineupazilaid" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secunionid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0">
+      <TextView android:id="@+id/Vlblunionid" android:text="103. ইউনিয়ন/পৌরসভা: /জোন:" android:layout_width="300sp" android:layout_height="wrap_content" android:textSize="20sp" />
+        <Spinner android:id="@+id/spnunionid" android:drawSelectorOnTop="true" android:layout_width="300sp" android:layout_height="wrap_content" android:layout_weight="0" android:prompt="@string/planet_prompt" android:textSize="20sp" />
+    </LinearLayout>
+
+    <View android:id="@+id/lineunionid" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+        <LinearLayout android:id="@+id/secunionother" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0" android:visibility="gone">
+             <TextView android:id="@+id/Vlblunionother" android:text="103a. ইউনিয়ন/পৌরসভা  নাম " android:layout_width="300sp" android:layout_height="wrap_content" android:textSize="20sp" />
+            <EditText android:id="@+id/txtunionother" android:maxLength="200" android:layout_width="300sp"  android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:textSize="20sp" android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ. " android:inputType="textCapCharacters|text" />
+        </LinearLayout>
+
+        <View android:id="@+id/lineunionother" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" android:visibility="gone"/>
+
+        <LinearLayout android:id="@+id/secvillageid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0" android:visibility="gone">
+        <TextView android:id="@+id/Vlblvillageid" android:text="104. গ্রাম নাম " android:layout_width="300sp" android:layout_height="wrap_content" android:textSize="20sp" />
+        <EditText android:id="@+id/txtvillage_name" android:maxLength="200" android:layout_width="300sp"  android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:textSize="20sp" android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ. " android:inputType="textCapCharacters|text" />
+    </LinearLayout>
+        <View android:id="@+id/linevillageid" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" android:visibility="gone"/>
+
+        <LinearLayout android:id="@+id/secq105" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0">
+            <TextView android:id="@+id/Vlblq105" android:text="105. ওয়ার্ড নম্বর" android:layout_width="300sp" android:layout_height="wrap_content" android:textSize="20sp" />
+            <Spinner android:id="@+id/spnq105" android:drawSelectorOnTop="true" android:layout_width="200sp" android:layout_height="wrap_content" android:layout_weight="0" android:prompt="@string/planet_prompt" android:textSize="20sp" />
+        </LinearLayout>
+        <View android:id="@+id/lineq105" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+        <LinearLayout android:id="@+id/secq106" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0" android:visibility="visible">
+           <TextView android:id="@+id/Vlblq106" android:text="106. সেবা কেন্দ্রের নাম" android:layout_width="300sp" android:layout_height="wrap_content" android:textSize="20sp" />
+            <Spinner android:id="@+id/spnq106" android:drawSelectorOnTop="true" android:layout_width="300sp" android:layout_height="wrap_content" android:layout_weight="0" android:prompt="@string/planet_prompt" android:textSize="20sp" />
+        </LinearLayout>
+        <View android:id="@+id/lineq106" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" android:visibility="gone"/>
+
+<!--
+
+        <LinearLayout android:id="@+id/secq2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0">
+            <TextView android:id="@+id/Vlblq2" android:text="106. সেবা কেন্দ্রের নাম " android:layout_width="300sp" android:layout_height="wrap_content" android:textSize="20sp" />
+            <Spinner android:id="@+id/spnq2" android:drawSelectorOnTop="true" android:layout_width="300sp" android:layout_height="wrap_content" android:layout_weight="0" android:prompt="@string/planet_prompt" android:textSize="20sp" />
+        </LinearLayout>
+        <View android:id="@+id/lineq2" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+-->
+
+
+        <LinearLayout android:id="@+id/secq107" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0">
+             <TextView android:id="@+id/Vlblq107" android:text="107. সেবা প্রদানকারী পদবী" android:layout_width="300sp" android:layout_height="wrap_content" android:textSize="20sp" />
+            <Spinner android:id="@+id/spnq107" android:drawSelectorOnTop="true" android:layout_width="300sp" android:layout_height="wrap_content" android:layout_weight="0" android:prompt="@string/planet_prompt" android:textSize="20sp" />
+        </LinearLayout>
+        <View android:id="@+id/lineq107" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+        <LinearLayout android:id="@+id/secinterviewer_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0">
+            <TextView android:id="@+id/Vlblinterviewer_date" android:text="108. স্বাক্ষাতকার গ্রহণের তারিখ" android:layout_width="300sp" android:layout_height="wrap_content" android:textSize="20sp" />
+            <EditText android:id="@+id/dtpinterviewer_date" android:drawableRight="@drawable/calender" android:layout_width="160sp" android:inputType="text" android:layout_height="wrap_content" android:focusable="false" style="@style/customEdit" android:layout_marginRight="10sp" android:textSize="20sp" />
+        </LinearLayout>
+        <View android:id="@+id/lineinterviewer_date" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+        <LinearLayout android:id="@+id/secq109" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0">
+            <TextView android:id="@+id/Vlbq109" android:text="109. সেবা গ্রহণকারীর নাম" android:layout_width="300sp" android:layout_height="wrap_content" android:textSize="20sp" />
+            <EditText android:id="@+id/txtq109" android:enabled="true" android:maxLength="200" android:layout_width="300sp"  android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:textSize="20sp" android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ. " android:inputType="textCapCharacters|text" />
+        </LinearLayout>
+        <View android:id="@+id/lineq109" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+        <LinearLayout android:layout_width="fill_parent" android:paddingTop="20sp" android:layout_height="wrap_content" android:orientation="vertical">
+            <Button android:id="@+id/cmdSave" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_green"
+                android:textSize="20sp" android:text=" Save -> Continue " android:textColor="#FFFFFF" android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
